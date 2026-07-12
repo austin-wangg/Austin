@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Austin · Personal Site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-bar" id="scrollBar"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo">Austin<span class="dot-red">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#music">Music</a>
+      <a href="#research">Research</a>
+      <a href="#sports">Sports</a>
+      <a href="#contact" class="nav-cta">Get in touch →</a>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#music">Music</a>
+    <a href="#research">Research</a>
+    <a href="#sports">Sports</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#contact">Get in touch</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow mono">Hi, welcome</p>
+      <h1 class="hero-title">
+        I'm <span class="accent-red">Austin</span><br>
+        percussionist, inventor, competitor.
+      </h1>
+      <p class="hero-desc">
+        Born and raised in Suzhou, China. This September I'm starting the
+        Foundation Programme at the University of Auckland, with
+        undergraduate study beginning next March. My time is split between
+        orchestra rehearsals, engineering prototypes, and the volleyball
+        court — usually in that order on a good day.
+      </p>
+      <div class="hero-actions">
+        <a href="#research" class="btn-solid">See what I've built →</a>
+        <a href="#contact" class="link-arrow">Get in touch <span>→</span></a>
+      </div>
+    </div>
+
+    <div class="hero-avatar-wrap">
+      <div class="avatar">
+        <span class="avatar-fallback">A</span>
+        <!-- Drop your photo at images/avatar.jpg — it will show up automatically.
+             If the file doesn't exist, the letter above stays as a fallback. -->
+        <img src="images/avatar.jpg" alt="Austin's photo" class="avatar-img" onerror="this.style.display='none'">
+      </div>
+      <span class="avatar-badge mono">● Percussionist · Inventor · Athlete</span>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>Percussion</span><span class="red">·</span><span>Embedded Systems</span><span class="red">·</span>
+      <span>Invention</span><span class="red">·</span><span>Volleyball</span><span class="red">·</span>
+      <span>Percussion</span><span class="red">·</span><span>Embedded Systems</span><span class="red">·</span>
+      <span>Invention</span><span class="red">·</span><span>Volleyball</span><span class="red">·</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-num mono">01</span>
+      <p class="eyebrow mono">About Me</p>
+      <h2>Curious by nature,<br><span class="accent-red">focused</span> by choice.</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text-block">
+        <p>
+          I grew up in Suzhou, and this September I'm heading to the
+          University of Auckland's Foundation Programme, with undergraduate
+          study starting next March. Most of what I do falls into three
+          buckets — music, invention, and sport — and I like it that way.
+        </p>
+        <p>
+          I started percussion at age 8, and it's stuck with me ever
+          since — through the Poly Youth Orchestra, the Suzhou Youth
+          Symphony Orchestra, and a handful of solo stages along the way.
+          In high school, a few classmates and I turned an everyday
+          frustration — produce loaded with pesticide residue — into a
+          research project, designing an embedded control system for home
+          hydroponics from scratch. When I'm not doing either of those,
+          I'm probably on a volleyball court, at a climbing gym, or in the
+          weight room.
+        </p>
+
+        <blockquote class="pull-quote">
+          "Stay curious, stay consistent."
+        </blockquote>
+      </div>
+
+      <ul class="stats-grid">
+        <li>
+          <span class="stat-num">2</span>
+          <span class="stat-label">Youth orchestras</span>
+        </li>
+        <li>
+          <span class="stat-num">2nd</span>
+          <span class="stat-label">National percussion prize</span>
+        </li>
+        <li>
+          <span class="stat-num">1st</span>
+          <span class="stat-label">Provincial invention award</span>
+        </li>
+        <li>
+          <span class="stat-num">5th</span>
+          <span class="stat-label">City volleyball ranking</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-num mono">02</span>
+      <p class="eyebrow mono">Skills</p>
+      <h2>What I <span class="accent-red">work</span> with</h2>
+    </div>
+
+    <ul class="skills-list">
+      <li>Percussion Performance</li>
+      <li class="filled">Embedded Systems / STM32</li>
+      <li>Circuit Design</li>
+      <li>C / Python</li>
+      <li class="filled">Ensemble Leadership</li>
+      <li>Team Collaboration</li>
+      <li>Research &amp; Prototyping</li>
+      <li class="filled">Volleyball</li>
+      <li>Rock Climbing</li>
+      <li>Sight-Reading</li>
+      <li class="filled">Public Speaking</li>
+      <li>Fitness Training</li>
+    </ul>
+  </section>
+
+  <!-- ============ MUSIC / PERFORMANCES ============ -->
+  <section class="music" id="music">
+    <div class="section-head">
+      <span class="section-num mono">03</span>
+      <p class="eyebrow mono">On Stage</p>
+      <h2>Some <span class="accent-red">performances</span></h2>
+    </div>
+
+    <p class="section-intro">
+      I've played percussion with the Poly Youth Orchestra and the Suzhou
+      Youth Symphony Orchestra, eventually leading the percussion section
+      in the latter. On the solo side, I competed in the IPEA percussion
+      solo competition and placed 2nd nationally at the Aiyue national finals.
+      A few clips from along the way:
+    </p>
+
+    <div class="video-carousel" id="videoCarousel">
+
+      <div class="video-stage">
+        <div class="video-slot">
+          <video id="videoPlayer" class="video-player" controls playsinline></video>
+          <button type="button" class="video-placeholder" id="videoPlaceholder">
+            <span class="video-poster-num mono" id="videoPosterNum">01</span>
+            <span class="play-icon">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            <span class="video-poster-title" id="videoPosterTitle">Itsuki Fantasy</span>
+            <span class="video-hint mono" id="videoHint">Click to play</span>
+          </button>
+        </div>
+
+        <button class="video-nav video-nav-prev" id="videoPrev" aria-label="Previous video">←</button>
+        <button class="video-nav video-nav-next" id="videoNext" aria-label="Next video">→</button>
+      </div>
+
+      <div class="video-info">
+        <h3 id="videoTitle">Itsuki Fantasy</h3>
+        <p id="videoDesc">Composer: Keiko Abe · IPEA Percussion Solo Competition — National Second Prize, Aiyue national finals.</p>
+      </div>
+
+      <div class="video-dots" id="videoDots">
+        <button class="video-dot active" data-index="0" aria-label="Video 1"></button>
+        <button class="video-dot" data-index="1" aria-label="Video 2"></button>
+        <button class="video-dot" data-index="2" aria-label="Video 3"></button>
+      </div>
+
+      <!-- Slide data used by js/script.js — edit titles/descriptions/file paths here -->
+      <script type="application/json" id="videoData">
+        [
+          { "file": "videos/performance-1.mp4", "title": "Itsuki Fantasy", "desc": "Composer: Keiko Abe · IPEA Percussion Solo Competition — National Second Prize, Aiyue national finals." },
+          { "file": "videos/performance-2.mp4", "title": "Trommelsuite — Toccata", "desc": "A snare drum solo performance." },
+          { "file": "videos/performance-4.mp4", "title": "Prism", "desc": "Composer: Keiko Abe · IPEA Percussion Solo Competition." }
+        ]
+      </script>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH / INVENTION ============ -->
+  <section class="research" id="research">
+    <div class="section-head">
+      <span class="section-num mono">04</span>
+      <p class="eyebrow mono">Innovation &amp; Research</p>
+      <h2>Things I've <span class="accent-red">engineered</span></h2>
+    </div>
+
+    <div class="research-card">
+      <span class="research-tag mono">Embedded Systems · STM32 · IoT</span>
+      <h3>Household Smart Hydroponic Control Core System</h3>
+      <p>
+        A few classmates and I set out to solve a very ordinary problem —
+        vegetables loaded with pesticide residue and no easy way to grow
+        clean produce at home. We designed and built an STM32-based embedded
+        control system that runs a full home hydroponic setup: temperature,
+        humidity, CO₂, pH, dissolved oxygen and light are all monitored in
+        real time, with pumps, fans, a humidifier and LED grow lights
+        adjusting automatically in a closed feedback loop. Over a multi-week
+        trial, the plants under the system's control noticeably outgrew a
+        manually-tended control group.
+      </p>
+
+      <ul class="achievement-list">
+        <li>
+          <span class="achievement-tag mono">Award</span>
+          <span><strong>Global Water Tech Invention Competition</strong> — Provincial First Prize, National Second Prize</span>
+        </li>
+        <li>
+          <span class="achievement-tag mono">Award</span>
+          <span><strong>Invention Convention China</strong> — <span class="status">results pending, competition still underway</span></span>
+        </li>
+      </ul>
+
+      <a href="research-report-zh.pdf" download class="link-arrow" style="margin-top: 1.6rem; display: inline-block;">Download the original project report in Chinese (PDF) <span>→</span></a>
+      <a href="research-report-en.pdf" download class="link-arrow" style="margin-top: 1.6rem; display: inline-block;">Download the translated project report (PDF) <span>→</span></a>
+
+    </div>
+  </section>
+
+  <!-- ============ SPORTS ============ -->
+  <section class="sports" id="sports">
+    <div class="section-head">
+      <span class="section-num mono">05</span>
+      <p class="eyebrow mono">Off the Clock</p>
+      <h2>Sport keeps me <span class="accent-red">healthy</span></h2>
+    </div>
+
+    <p class="section-intro">
+      I play on my school's volleyball team and serve as President of the
+      volleyball club — we've placed 2nd in the district two years running,
+      and 5th citywide this year. Outside of organized sport, I climb, play
+      badminton, and lift.
+    </p>
+
+    <div class="photo-grid">
+      <div class="photo-item">
+        <span class="photo-fallback mono">images/volleyball-1.jpg</span>
+        <img src="images/volleyball-1.jpg" alt="Volleyball team photo" class="photo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-item">
+        <span class="photo-fallback mono">images/volleyball-2.jpg</span>
+        <img src="images/volleyball-2.jpg" alt="Volleyball team photo" class="photo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-item">
+        <span class="photo-fallback mono">images/volleyball-3.jpg</span>
+        <img src="images/volleyball-3.jpg" alt="Volleyball team photo" class="photo-img" onerror="this.style.display='none'">
+      </div>
+      <div class="photo-item">
+        <span class="photo-fallback mono">images/volleyball-4.jpg</span>
+        <img src="images/volleyball-4.jpg" alt="Volleyball team photo" class="photo-img" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section class="timeline" id="timeline">
+    <div class="section-head">
+      <span class="section-num mono">06</span>
+      <p class="eyebrow mono">The Journey So Far</p>
+      <h2>Timeline</h2>
+    </div>
+
+    <ul class="timeline-list">
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">2016 (age 8)</span>
+        <div class="timeline-content">
+          <h3>Started Percussion &amp; Joined the Poly Youth Orchestra</h3>
+          <p>First lessons and first ensemble, both the same year.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">2022</span>
+        <div class="timeline-content">
+          <h3>Suzhou Youth Symphony Orchestra</h3>
+          <p>Joined the ensemble and eventually led its percussion section.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">May 2024</span>
+        <div class="timeline-content">
+          <h3>IPEA Percussion Solo Competition</h3>
+          <p>National Second Prize at the Aiyue percussion solo finals.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">2025</span>
+        <div class="timeline-content">
+          <h3>Founded a Student Research Group</h3>
+          <p>Began designing the Household Smart Hydroponic Control Core System with a group of classmates in Suzhou.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">2026</span>
+        <div class="timeline-content">
+          <h3>Global Water Tech Invention Competition</h3>
+          <p>Provincial First Prize, National Second Prize. Also competing in Invention Convention China — results pending.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">2025 – 2026</span>
+        <div class="timeline-content">
+          <h3>School Volleyball Team &amp; Club President</h3>
+          <p>2x District Runner-up, 5th place citywide (2026), while serving as President of the volleyball club.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <span class="timeline-dot"></span>
+        <span class="timeline-year mono">Sept 2026</span>
+        <div class="timeline-content">
+          <h3>Foundation Programme, University of Auckland</h3>
+          <p>Starting the Foundation Programme, with undergraduate study to follow in March 2027.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <span class="section-num mono light">07</span>
+      <p class="eyebrow mono light">Get in Touch</p>
+      <h2 class="contact-title">Got something<br>in mind? Let's <span class="accent-red">talk</span>.</h2>
+      <p class="contact-desc">Whether it's a research collaboration, a stage to share, or just to say hi — I'd love to hear from you.</p>
+
+      <a href="mailto:1378568141@qq.com" class="contact-email">1378568141@qq.com</a>
+
+      <ul class="contact-socials">
+        <li><a href="tel:1565392060">Phone · 156 5392 0060</a></li>
+        <li><a href="#">QQ · 1378568141</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Austin</p>
+    <a href="#top" class="back-top mono">Back to top ↑</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
